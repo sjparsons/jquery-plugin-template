@@ -1,0 +1,22 @@
+{
+    "name": "jquery-plugin-template",
+    "version": "1.0.0",
+    "homepage": "http://github.com/sjparsons/jquery-plugin-template",
+    "authors": [
+        "Zeno Rocha <hi@zenorocha.com>"
+    ],
+    "description": "A starting point for jQuery plugin development.",
+    "main": "src/jquery.plugin.js",
+    "keywords": [
+        "jquery",
+        "plugin",
+        "template",
+        "jquery-plugin",
+        "jquery-template"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "qunit": "~1.16.0",
+        "jquery": "latest"
+    }
+}

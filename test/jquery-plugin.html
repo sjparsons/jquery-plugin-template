@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery plugin Test Suite</title>
+	<link rel="stylesheet" href="../src/jquery-plugin.css" type="text/css" media="screen">
+  <!-- Load local jQuery. -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <!-- Load local QUnit. -->
+  <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" media="screen">
+  <script src="../bower_components/qunit/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery-plugin.js"></script>
+  <script src="jquery-plugin_test.js"></script>
+  <!-- Removing access to jQuery and $. But it'll still be available as _$, if
+       you REALLY want to mess around with jQuery in the console. REMEMBER WE
+       ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
+  <script>window._$ = jQuery.noConflict(true);</script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+		<div class="dialog" id="example" role="dialog" tabindex="-1">
+			<div class="dialog-container">
+	    	<div class="dialog-main">
+					<h3>Dialog test markup</h3>
+					<p>Phasellus gravida <a href="#">hendrerit</a> viverra. Praesent vel nisi ultricies arcu facilisis gravida. Phasellus quis urna cursus est pulvinar semper. Sed volutpat erat quis ligula congue convallis. Mauris tristique eu lacus id dignissim. Phasellus et venenatis ipsum, vitae cursus nibh. Fusce vestibulum consequat enim ac iaculis. Suspendisse vehicula nulla sit amet mi ultricies eleifend eu et dolor.</p>
+					<button class="hide">Hide dialog</button>
+				</div>
+			</div>
+		</div>
+  </div>
+</body>
+</html>
